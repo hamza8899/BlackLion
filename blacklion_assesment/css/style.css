@@ -1,0 +1,347 @@
+body{
+    font-family: 'Monument Extended';
+    font-weight: normal;
+    background-color: #000000;
+    color: #fff;
+    overflow-x: hidden;
+}
+@media (min-width: 1800px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1766px;
+    }
+}
+.site-wrapper{
+    overflow: hidden;
+}
+header{
+    padding: 47px 0 0;
+    position: relative;
+    z-index: 1;
+}
+header .navbar-nav, .nav-link, .nav-item{
+    color: #fff;
+}
+header .nav-item{
+    margin-left: 30px;
+}
+header .nav-item:first-child{
+    margin-left: 0;
+}
+header .nav-link{
+    font-size: 34px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+header .nav-link.active, header .nav-link:hover{
+    color: #F6CD81 !important;
+}
+.header-bg-svg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* banner  */
+.future-of-music-banner-main{
+    z-index: 1;
+    padding-top: 47px;
+    position: relative;
+}
+.banner-ellipse{
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: -1;
+}
+.banner-text{
+    display: flex;
+    margin-top: 36px;
+}
+.banner-text h1{
+    font-size: 60px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transform: translateX(12.5%);
+    margin-bottom: 30px;
+}
+.music-animation-main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    max-width: 1920px;
+    max-height: 600px;
+    margin: 0 auto;
+}
+.music-animation-main svg{
+    width: 100%;
+}
+.color-full-notes{
+    /* width: 40%; */
+    width: 35%;
+    transform: translateX(7%);
+}
+.globe-rotate{
+    /* width: 29.0615%; */
+    width: 25%;
+    transform: translateX(-6%);
+    
+}
+
+.gold-note{
+    /* width: 17.83%; */
+    width: 14%;
+    transform: translate(-50%, -10%);
+    /* perspective: 1000px; */
+}
+/* .gold-note svg, .rotate-me{
+    transform-origin: center;
+    animation: spin 4s linear infinite;  
+}
+@keyframes spin {
+    from {
+      transform: rotateY(0deg);  
+    }
+    to {
+      transform: rotateY(360deg); 
+    }
+  } */
+.mobile-player{
+    position: relative;
+    left: -12%;
+    top: -170px;
+    z-index: 2;
+    width: 26%;
+    /* transform: translate(-38%, -22%); */
+}
+/* banner  */
+
+/* marquee slider  */
+.marquee-main-wrapper{
+    width: 100%; 
+   
+}
+.marquee-main{
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+    margin-top: 5px;
+    min-height: 790px;
+}
+.marquee-slider {
+    width: 130%;
+    height: 67px;
+    background-color: #fff;
+    color: #000;
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%) rotate(18deg);  
+  }
+  .marquee-content {
+    display: flex;  
+    white-space: nowrap;  
+    position: absolute;  
+}
+  
+  .marquee-slider span {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 100;
+    color: #000000;
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+
+  }
+  
+  .phrase { 
+    margin: 0 20px;  
+  }
+  /* marquee slider Two  */
+  .marquee-slider-two{ 
+    top: -5%;
+    left: -5%;
+    transform: translate(0%, 0%) rotate(-12deg);
+  }
+/* marquee slider  */
+
+/* power ai  */
+.power-ai{
+    max-width: 651px;
+    min-height: 500px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.power-ai h2{
+    font-size: 76px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.power-ai svg{
+    position: absolute;
+    right: -65px;
+    top: 25px;
+}
+/* power ai  */
+
+/* laptop preview  */
+.laptop-wrapper-main{
+    margin-top: -25%;
+    position: relative; 
+    height: 925px;
+}
+.laptop-ellipse{
+    position: absolute;
+    left: 0;
+    top: -36%;
+    z-index: -1;
+} 
+.laptop1{
+    width: 45%;
+}
+.laptop2{
+    width: 51%;
+    transform: translate(-45%, 9%);
+}
+
+/* Responsive  */
+@media screen and (min-width: 1600px)  and (max-width: 1800px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1550px;
+    }
+    .navbar-brand svg{
+        max-width: 375px;
+    }
+    header {
+        padding: 30px 0 0; 
+    }
+    header .nav-link {
+        font-size: 30px; 
+    }
+    .power-ai h2 {
+        font-size: 65px; 
+    }
+    .power-ai svg { 
+        right: -30px; 
+    }
+    .laptop2{ 
+        transform: translate(-45%, 9%);
+    }
+    .marquee-slider-two{
+        transform: translate(0%, 0%) rotate(-15deg);
+    }
+}
+
+@media screen and (min-width: 1400px)  and (max-width: 1600px) {
+    /* .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1550px;
+    } */
+    .navbar-brand svg{
+        max-width: 300px;
+        height: 100px;
+    }
+    header {
+        padding: 30px 0 0; 
+    }
+    header .nav-link {
+        font-size: 24px; 
+    }
+    .banner-text h1 {
+        font-size: 50px;
+    }
+    .power-ai h2 {
+        font-size: 55px; 
+    }
+    .power-ai svg { 
+        right: -30px; 
+        top: -80px;
+    }
+    .power-ai {
+        max-width: 500px;
+        min-height: 263px;
+    }
+    .marquee-main { 
+        min-height: 600px;
+    }
+    .marquee-slider{
+        top: 43%;
+    }
+    .marquee-slider-two{
+        top: -13%;
+    }
+    .laptop-wrapper-main{  
+        height: 850px;
+        margin-top: -35%;
+    }
+    
+    .laptop-ellipse {
+        top: -15%; 
+        height: 950px;
+    }
+}
+
+@media screen and (min-width: 1200px)  and (max-width: 1400px) {
+     
+    .navbar-brand svg{
+        max-width: 250px;
+        height: 75px;
+    }
+    header {
+        padding: 30px 0 0; 
+    }
+    header .nav-link {
+        font-size: 20px; 
+    }
+    .banner-text h1 {
+        font-size: 40px;
+    }
+    .gold-note{
+        transform: translate(-20%, -10%);
+    }
+    .mobile-player{
+        left: -7%;
+    }
+    .banner-ellipse{
+        top: -11px;
+        right: -22%;
+        height: 900px;
+    }
+    .power-ai h2 {
+        font-size: 40px; 
+    }
+    .power-ai svg { 
+        right: -30px; 
+        top: -80px;
+    }
+    .power-ai {
+        max-width: 385px;
+        min-height: 230px;
+    }
+    .marquee-main { 
+        min-height: 600px;
+    }
+    .marquee-slider{
+        top: 28%;
+    }
+    .marquee-slider-two{
+        top: -13%;
+    }  
+    
+    .laptop-wrapper-main{  
+        height: 850px;
+        margin-top: -45%;
+    }
+    
+    .laptop-ellipse {
+        top: -15%; 
+        height: 950px;
+    }
+}
